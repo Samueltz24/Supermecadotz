@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>seu produto</title>
+</head>
+
+<body onload="mostra()">
+   <script src="main.js"></script>
+
+  <title>teste</title>
+
+<nav>
+  <div class="divi">
+    <div class="sepa">
+      <a href="index.html">
+        <img src="FotoUnica/anterior.png" alt="">
+      </a>
+    </div>
+    <div class="sepa1">
+        <h3 class="h3">seu produto escolhido</h3>
+
+    </div>
+  </div>
+</nav>
+    <div id="conteudopri">
+        <h1 id="conteudo"></h1>
+
+    </div>
+<script src="main.js"></script>
+    <script>
+        // Função para obter o parâmetro da URL
+        function obterParametro(nome) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(nome);
+        }
+
+        // Obter o valor do parâmetro "mensagem"
+        const mensagem = obterParametro('mensagem');
+
+        // Definir o conteúdo da h1 com o valor obtido
+        if (mensagem) {
+            document.getElementById('conteudo').innerHTML = mensagem;
+        }
+    </script>
+</body>
+</html>
+</body>
+
+</html>
