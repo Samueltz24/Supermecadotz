@@ -12,9 +12,22 @@ let valo = document.getElementById('valo')
 let body = document.getElementById('body')
 let m=0
 
-let Fruta =[/*laranja*/5,/*macan*/6,/*abacate*/4,/*acerola*/3,/*uva*/6,/*abacaxi*/4,/*melao*/5,/*limao*/1,/*manga*/5,/*banana*/3,/*morango*/7,/*melancia*/5,/*repolho*/2,/*tomate*/5,/*beterraba*/4,/*cenoura*/7,/*cenola*/4,/*quiabo*/2,/*coentro*/3,/*macacheira*/4,/*pimentão*/3,/*berinjela*/3,/*alface*/2,/*jerimo*/5,/*queijoco*/25,/*queijomu*/30,/*queijorei*/35,/*queijopro*/50,/*queijopra*/34,/*queijomina*/75]
+let Fruta =[/*laranja*/5,/*macan*/6,/*abacate*/4,
+  /*acerola*/3,/*uva*/6,/*abacaxi*/4,/*mamao*/4,/*cuir*/7,/*melao*/5,
+  /*limao*/1,/*manga*/5,/*banana*/3,/*morango*/7,
+  /*melancia*/5,/*repolho*/2,/*tomate*/5,/*beterraba*/4,
+  /*cenoura*/7,/*cenola*/4,/*quiabo*/2,/*coentro*/3,
+  /*macacheira*/4,/*pimentão*/3,/*berinjela*/3,/*alface*/2,
+  /*jerimo*/5,/*queijoco*/25,/*queijomu*/30,/*queijorei*/35,
+  /*queijopro*/50,/*queijopra*/34,/*queijomina*/75]
 
-let NomeProduto=['laranja','maça','abacate','acerola','uva','abacaxi','melão','limão','manga','banana','morango','melancia',/*verdura*/'repolho','tomate','beterraba','cenoura','cebola','quiabo','coentro','macacheira','pimentao','berinjela','alface','jerimo','queijo coalho','queijo mussarela','queijo do reino','queijo probolone','queijo prato','queijo minas']
+let NomeProduto=['laranja','maça','abacate',
+  'acerola','uva','abacaxi','mamao','cuir', 'melão','limão',
+  'manga','banana','morango','melancia',/*verdura*/'repolho',
+  'tomate','beterraba','cenoura','cebola','quiabo',
+  'coentro','macacheira','pimentao','berinjela','alface',
+  'jerimo','queijo coalho','queijo mussarela','queijo do reino',
+  'queijo probolone','queijo prato','queijo minas']
 
 let NumeroMm =Array(100000).fill(0)
 let lista =[]
