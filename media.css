@@ -1,0 +1,11 @@
+@media (min-width: 1200px){
+    .glider{
+       margin: 0px 5%;
+    }
+    .cartera1{
+        width: 10%;
+    }
+    .principal{
+        margin: 0 5%;
+    }
+}
