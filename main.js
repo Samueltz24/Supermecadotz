@@ -13,21 +13,27 @@ let body = document.getElementById('body')
 let m=0
 
 let Fruta =[/*laranja*/5,/*macan*/6,/*abacate*/4,
-  /*acerola*/3,/*uva*/6,/*abacaxi*/4,/*mamao*/4,/*cuir*/7,/*melao*/5,
+  /*acerola*/3,/*uva*/6,/*abacaxi*/4,/*mamao*/4,/*cuir*/7,/*caja*/3,/*melao*/5,
   /*limao*/1,/*manga*/5,/*banana*/3,/*morango*/7,
-  /*melancia*/5,/*repolho*/2,/*tomate*/5,/*beterraba*/4,
-  /*cenoura*/7,/*cenola*/4,/*quiabo*/2,/*coentro*/3,
+  /*melancia*/5,/*goiba*/4,/*caju*/2,/*coco*/5,/*repolho*/2,/*tomate*/5,
+  /*beterraba*/4,
+  /*cenoura*/7,/*cenola*/4,/*quiabo*/2,/*couve*/3,/*pepino*/4,
+  /*cará*/4,/*coentro*/3,
   /*macacheira*/4,/*pimentão*/3,/*berinjela*/3,/*alface*/2,
-  /*jerimo*/5,/*queijoco*/25,/*queijomu*/30,/*queijorei*/35,
-  /*queijopro*/50,/*queijopra*/34,/*queijomina*/75]
+  /*jerimo*/5,/*agriao*/5,/*rabonete*/3,/*palmito*/6,/*queijoco*/25,/*queijomu*/30,/*queijorei*/35,
+  /*queijopro*/50,/*queijopra*/34,/*queijomina*/75,/*queijogangazola*/90,
+/*bolao*/40,/*presunto*/60 ]
 
 let NomeProduto=['laranja','maça','abacate',
-  'acerola','uva','abacaxi','mamao','cuir', 'melão','limão',
-  'manga','banana','morango','melancia',/*verdura*/'repolho',
-  'tomate','beterraba','cenoura','cebola','quiabo',
+  'acerola','uva','abacaxi','mamao','cuir','caja','melão','limão',
+  'manga','banana','morango','melancia','goiba','caju','coco',
+  /*verdura*/'repolho',
+  'tomate','beterraba','cenoura','cebola','quiabo','couve',
+  'pepino','cará',
   'coentro','macacheira','pimentao','berinjela','alface',
-  'jerimo','queijo coalho','queijo mussarela','queijo do reino',
-  'queijo probolone','queijo prato','queijo minas']
+  'jerimo','agriao','rabonete','palmito','queijo coalho','queijo mussarela','queijo do reino',
+  'queijo probolone','queijo prato','queijo minas','queijo gangazola',
+'mortadela bolao','presunto']
 
 let NumeroMm =Array(100000).fill(0)
 let lista =[]
@@ -57,6 +63,10 @@ function Menos(M){
   if(M >= 0 && M < NumeroMm.length){
     NumeroMm[M]--
     RespostaNumero[M].innerHTML=NumeroMm[M]
+  }
+  if(NumeroMm[M] <= -1){
+    NumeroMm[M]=0
+    RespostaNumero[M].innerHTML = 0
   }
 }
 
@@ -124,6 +134,7 @@ new Glider(document.querySelector('.glider2'), {
     next: '.glider-next'
   }
 });
+
 
 
 
